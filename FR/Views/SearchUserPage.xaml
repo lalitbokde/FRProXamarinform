@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.Views.SearchUserPage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+  <StackLayout BackgroundColor="#eaeaea">
+    <ListView x:Name="lvUsers" ItemSelected="OnItemSelected" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+
+              <ffimageloading:CachedImage
+                  Source="{Binding Avatar}"
+                  x:Name="imgUserAvatar"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+			            WidthRequest="50"
+                  HeightRequest="50"
+                  Grid.Column="0">
+              </ffimageloading:CachedImage>
+
+              <StackLayout Padding="10,25,10,10" Grid.Column="1">
+                <Label x:Name="lblName"
+                    Grid.Column="1"
+                    Text="{Binding Username}" />
+              </StackLayout>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

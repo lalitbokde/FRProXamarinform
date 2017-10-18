@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+              xmlns:animations="clr-namespace:FR.Animations;assembly=FR"
+              xmlns:i18n="clr-namespace:FR;assembly=FR"
+              x:Class="FR.ModalChatMessageActionPage">
+  <pages:PopupPage.Animation>
+    <animations:UserAnimation/>
+  </pages:PopupPage.Animation>
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <Frame BackgroundColor="Silver">
+      <StackLayout Spacing="20">
+        <Label HorizontalOptions="Center" Text="{i18n:Translate Copy}" FontSize="16" TextColor="#000000">
+          <Label.GestureRecognizers>
+            <TapGestureRecognizer
+                Tapped="CopyOnTapped"
+                NumberOfTapsRequired="1" />
+          </Label.GestureRecognizers>
+        </Label>
+        <Label HorizontalOptions="Center" Text="{i18n:Translate Share}" FontSize="16" TextColor="#000000">
+          <Label.GestureRecognizers>
+            <TapGestureRecognizer
+                Tapped="ShareOnTapped"
+                NumberOfTapsRequired="1" />
+          </Label.GestureRecognizers>
+        </Label>
+        <Label HorizontalOptions="Center" Text="{i18n:Translate Favourite}" FontSize="16" TextColor="#000000">
+          <Label.GestureRecognizers>
+            <TapGestureRecognizer
+                Tapped="FavouriteOnTapped"
+                NumberOfTapsRequired="1" />
+          </Label.GestureRecognizers>
+        </Label>
+      </StackLayout>
+    </Frame>
+  </StackLayout>
+</pages:PopupPage>

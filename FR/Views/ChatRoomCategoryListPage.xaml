@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.ChatRoomCategoryListPage"
+             xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:i18n="clr-namespace:FR;assembly=FR">
+  <StackLayout BackgroundColor="#f5f5f5">
+
+      <ScrollView>
+        <StackLayout>
+
+          <Grid x:Name="gdEnroll">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="75" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="0" Padding="5, 5, 5, 5">
+              <ffimageloading:CachedImage
+                DownsampleToViewSize="true"
+                Source = "OriginalImage.JPG"
+                HeightRequest="75"
+                WidthRequest="75"
+                Grid.Column="0">
+               <!-- <ffimageloading:CachedImage.Transformations>
+                  <fftransformations:CircleTransformation />
+                </ffimageloading:CachedImage.Transformations>-->
+              </ffimageloading:CachedImage>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Padding="0, 10, 0, 0">
+              <Label Text="{i18n:Translate PreSaleGroup}" FontSize="15" TextColor="#3d3d3d" FontAttributes="Bold"/>
+              <Label Text="{i18n:Translate PreSaleGroupDescription}"  FontSize="12" TextColor="#3d3d3d" />
+            </StackLayout>
+
+            <StackLayout Grid.Column="2" Padding="0, 30, 0, 0">
+              <Label Text="5.21 pm" FontSize="10"/>
+            </StackLayout>
+          </Grid>
+
+          <Grid x:Name="gdFRMemberArea">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="75" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="0" Padding="5, 5, 5, 5">
+              <ffimageloading:CachedImage
+                DownsampleToViewSize="true"
+                Source = "OriginalImage.JPG"
+                HeightRequest="75"
+                WidthRequest="75"
+                Grid.Column="0">
+                <!--<ffimageloading:CachedImage.Transformations>
+                  <fftransformations:CircleTransformation />
+                </ffimageloading:CachedImage.Transformations>-->
+              </ffimageloading:CachedImage>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Padding="0, 10, 0, 0">
+              <Label Text="{i18n:Translate FRChat}" FontSize="15" TextColor="#3d3d3d" FontAttributes="Bold"/>
+              <Label Text="{i18n:Translate FRChatDescription}"  FontSize="12" TextColor="#3d3d3d" />
+            </StackLayout>
+
+            <StackLayout Grid.Column="2" Padding="0, 30, 0, 0">
+              <Label Text="5.21 pm" FontSize="10"/>
+            </StackLayout>
+          </Grid>
+
+          <Grid x:Name="gdCommonChatRoom">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="75" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="0" Padding="5, 5, 5, 5">
+              <ffimageloading:CachedImage
+                DownsampleToViewSize="true"
+                Source = "OriginalImage.JPG"
+                HeightRequest="75"
+                WidthRequest="75"
+                Grid.Column="0">
+                <!--<ffimageloading:CachedImage.Transformations>
+                  <fftransformations:CircleTransformation />
+                </ffimageloading:CachedImage.Transformations>-->
+              </ffimageloading:CachedImage>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Padding="0, 10, 0, 0">
+              <Label Text="{i18n:Translate ChattingRoom}" FontSize="15" TextColor="#3d3d3d" FontAttributes="Bold"/>
+              <Label Text="{i18n:Translate ChattingRoomDescription}"  FontSize="12" TextColor="#3d3d3d" />
+            </StackLayout>
+
+            <StackLayout Grid.Column="2" Padding="0, 30, 0, 0">
+              <Label Text="5.21 pm" FontSize="10"/>
+            </StackLayout>
+          </Grid>
+        </StackLayout>
+      </ScrollView>
+    
+      <StackLayout VerticalOptions="CenterAndExpand">
+         <!--fill the unnessary space-->
+      </StackLayout>
+
+      <usercontrols:BottomMenu x:Name="bottomMenu"/>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.AddEnrollPage"
+             xmlns:common="clr-namespace:FR.Common;assembly=FR"
+             BackgroundColor="{x:Static common:ColorResources.ListBGColor}"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:i18n="clr-namespace:FR;assembly=FR">
+  <StackLayout Padding="20">
+    <Entry x:Name="etyName"
+            Placeholder="{i18n:Translate Name}"
+            Text=""
+            TextColor="Black"
+            FontSize="20"/>
+
+    <Entry x:Name="etyTelephone"
+            Placeholder="{i18n:Translate Telephone}"
+            Text=""
+            TextColor="Black"
+            FontSize="20"
+            Keyboard="Telephone"/>
+
+    <Editor x:Name="edtRemark"
+            TextColor="Black"
+            FontSize="20"
+            HeightRequest="100"
+            Focused="edtRemark_Focused" Unfocused="edtRemark_Unfocused"/>
+
+    <ffimageloading:CachedImage
+      x:Name="imgUploadImage"
+      Source="image.png"
+      DownsampleToViewSize="true"
+      HeightRequest="50" WidthRequest="50"
+      HorizontalOptions="Center" VerticalOptions="Center">
+      <ffimageloading:CachedImage.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrImgUploadPicture"
+          Tapped="OnTappedImgUploadPicture"
+          NumberOfTapsRequired="1" />
+      </ffimageloading:CachedImage.GestureRecognizers>
+    </ffimageloading:CachedImage>
+    
+    <Button x:Name="btnSubmit"
+            TextColor="White"
+            BackgroundColor="{x:Static common:ColorResources.SubmitButton}"
+            Text="{i18n:Translate Submit}"
+            Font="{x:Static common:FontResources.StandardBold}"
+            BorderWidth="1"
+            BorderColor="#376ea4"/>
+  </StackLayout>
+</ContentPage>

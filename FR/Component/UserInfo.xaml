@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.Component.UserInfo"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+  <Grid RowSpacing="1" ColumnSpacing="1" Padding="20, 2, 20, 2" BackgroundColor="#ffffff">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="180" />
+      <RowDefinition Height="30" />
+      <RowDefinition Height="30" />
+      <!--<RowDefinition Height="30" />
+      <RowDefinition Height="30" />
+      <RowDefinition Height="30" />
+      <RowDefinition Height="30" />
+      <RowDefinition Height="30" />-->
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <ffimageloading:CachedImage
+      Source="fr_logo.png"
+      x:Name="imgProfile"
+      HorizontalOptions="Center"
+      VerticalOptions="Center"
+			WidthRequest="150"
+      HeightRequest="150"
+			DownsampleToViewSize="true"
+      Grid.Row="0">
+    </ffimageloading:CachedImage>
+
+    <Label x:Name="lblName" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           FontSize="20" 
+           HorizontalOptions="Center" 
+           TextColor="#629ef6" />
+    
+    <Label x:Name="lblUsername" 
+           Grid.Row="2" 
+           Grid.Column="0"  
+           HorizontalOptions="Center"/>
+    
+    <!--<Label Text="Tel No : " Grid.Row="3" Grid.Column="0"/>
+    <Label x:Name="lblTelNo" Text="" Grid.Row="3" Grid.Column="1" />
+    <Label Text="ID Card : " Grid.Row="4" Grid.Column="0"/>
+    <Label x:Name="lblIDCard" Text="" Grid.Row="4" Grid.Column="1" />
+    <Label Text="Bank Name : " Grid.Row="5" Grid.Column="0"/>
+    <Label x:Name="lblBankName" Text="" Grid.Row="5" Grid.Column="1" />
+    <Label Text="Bank Card Number: " Grid.Row="6" Grid.Column="0"/>
+    <Label x:Name="lblBankCardNumber" Text="" Grid.Row="6" Grid.Column="1" />-->
+  </Grid>
+</StackLayout>

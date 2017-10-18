@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.Component.Pagination">
+
+  <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
+
+    <Label x:Name="lblPrev"
+          Text="Prev"
+          FontSize="25"
+          IsVisible="false" >
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblPrev"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem1"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem1"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem2"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem2"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem3"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem3"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem4"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem4"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem5"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem5"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem6"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem6"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem7"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem7"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem8"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem8"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblItem9"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblItem9"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+
+    <Label x:Name="lblNext"
+          Text="Next"
+          FontSize="25"
+          IsVisible="false">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer
+          x:Name="tgrlblNext"
+          Tapped="OnTappedItem"
+          NumberOfTapsRequired="1" />
+      </Label.GestureRecognizers>
+    </Label>
+  </StackLayout>
+</StackLayout>

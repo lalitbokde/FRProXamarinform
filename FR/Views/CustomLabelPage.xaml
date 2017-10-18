@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.CustomLabelPage"
+             xmlns:local="clr-namespace:FR.CustomViews;assembly=FR"
+             BackgroundColor="#ffffff">
+  <StackLayout>
+    <local:CustomLabelRegular FontSize="17" TextColor="#000000" Text="Test 123" />
+    <local:CustomLabelUnderline FontSize="17" Text="Test 456" />
+  </StackLayout>
+</ContentPage>

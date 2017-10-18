@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.DrawerPage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             Title="Menu"
+             BackgroundColor="#8999A6"
+             Padding="0,20,0,0">
+  <StackLayout Orientation="Vertical">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="10"/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="30"/>
+        <RowDefinition Height="80"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="5"/>
+      </Grid.RowDefinitions>
+      <BoxView Grid.ColumnSpan="3"
+               Grid.RowSpan="4"
+               BackgroundColor="#8999A6"/>
+      <ffimageloading:CachedImage
+        x:Name="imgSideMenuProfile"
+        HorizontalOptions="Start"
+        VerticalOptions="End"
+			  WidthRequest="75"
+        HeightRequest="75"
+			  DownsampleToViewSize="true"
+        Grid.Column="1"
+        Grid.Row="1">
+      </ffimageloading:CachedImage>
+      <Label
+          x:Name="myName"
+          Grid.Column="1"
+          Grid.Row="2"/>
+    </Grid>
+    <ListView x:Name="listed" SeparatorColor="Transparent">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid Padding="20,0,0,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Image Source="{Binding Icon}" Grid.Column="0" HeightRequest="25" WidthRequest="25"/>
+              <Label Text="{Binding Name}" VerticalTextAlignment="Center" Grid.Column="2"/>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

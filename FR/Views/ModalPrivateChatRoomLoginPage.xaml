@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                xmlns:animations="clr-namespace:FR.Animations;assembly=FR"
+                xmlns:i18n="clr-namespace:FR;assembly=FR"
+                x:Class="FR.ModalPrivateChatRoomLoginPage">
+  <pages:PopupPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+        <Setter Property="TextColor" Value="#7dbbe6"/>
+      </Style>
+    </ResourceDictionary>
+  </pages:PopupPage.Resources>
+  <!--<pages:PopupPage.Animation>
+    <animations:ScaleAnimation
+      PositionIn="Bottom"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="700"
+      EasingIn="BounceOut"/>
+  </pages:PopupPage.Animation>-->
+  <ScrollView
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+    <AbsoluteLayout>
+      <Frame
+        x:Name="FrameContainer"
+        Margin="15"
+        HorizontalOptions="Center"
+        BackgroundColor="White">
+        <StackLayout
+            IsClippedToBounds="True"
+            Padding="10, 5"
+            Spacing="3">
+
+          <Entry
+            HorizontalOptions="Center"
+            x:Name="etyPassword"
+            Style="{StaticResource EntryStyle}"
+            Placeholder="{i18n:Translate Password}"
+            IsPassword="True"/>
+          <Button
+            Margin="10, 5"
+            BackgroundColor="#7dbbe6"
+            HorizontalOptions="Fill"
+            Clicked="OnClickedConfirm"
+            x:Name="LoginButton"
+            Text="{i18n:Translate Confirm}">
+            <Button.HeightRequest>
+              <OnPlatform x:TypeArguments="x:Double" Android="50" iOS="30" WinPhone="30"/>
+            </Button.HeightRequest>
+          </Button>
+        </StackLayout>
+      </Frame>
+    </AbsoluteLayout>
+  </ScrollView>
+</pages:PopupPage>

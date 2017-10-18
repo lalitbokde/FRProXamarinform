@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.EnrollListPage"
+             xmlns:common="clr-namespace:FR.Common;assembly=FR"
+             xmlns:i18n="clr-namespace:FR;assembly=FR"
+             xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             BackgroundColor="#ffffff">
+    <StackLayout x:Name="slEnroll" BackgroundColor="{x:Static common:ColorResources.ListBGColor}">
+      <StackLayout Padding="10,10,10,10">
+        <Button x:Name="btnAddEnroll"
+             Text="{i18n:Translate ClickAndEnter}"
+             BackgroundColor="{x:Static common:ColorResources.SubmitButton}"/>
+      </StackLayout>
+    
+      <ListView x:Name="lvEnrolls"
+                HasUnevenRows="true"
+                ItemsSource="{Binding Enrolls}">
+        <ListView.Header>
+          <StackLayout Padding="10">
+            <Label Text="{i18n:Translate EnrollRule1}" />
+            <Label Text="{i18n:Translate EnrollRule2}" />
+            <Label Text="{i18n:Translate EnrollRule3}" />
+            <Label Text="{i18n:Translate EnrollRule4}" />
+            <Label Text="{i18n:Translate EnrollRule5}" />
+            <Label Text="{i18n:Translate EnrollRule6}" />
+            <Label Text="{i18n:Translate EnrollRule7}" />
+          </StackLayout>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+                <StackLayout Padding="10">
+
+                  <Label x:Name="lblSenderUsername"
+                        Text="{Binding enroll.Sender_Username}"
+                        TextColor="Black"
+                        Font="{x:Static common:FontResources.Standard}"/>
+
+                  <StackLayout Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                      <Label x:Name="lblName"
+                            Text="{Binding enroll.Name}"
+                            TextColor="Black"
+                            Font="{x:Static common:FontResources.Standard}"/>
+
+                      <Label x:Name="lblTelephone"
+                          Text="{Binding enroll.Telephone}"
+                          TextColor="Black"
+                          Font="{x:Static common:FontResources.Standard}"/>
+                    </StackLayout>
+                
+                    <Label x:Name="lblRemark"
+                        Text="{Binding enroll.Remark}"
+                        TextColor="Black"
+                        Font="{x:Static common:FontResources.Standard}"/>
+
+                    <ffimageloading:CachedImage
+                      x:Name="imgUploadPicture"
+                      Source="{Binding enroll.File}"
+			                HorizontalOptions="Center" VerticalOptions="Center"
+                      WidthRequest="300" HeightRequest="300"
+                      IsVisible="{Binding IsUploadImageExist}">
+                    </ffimageloading:CachedImage>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
+                      <StackLayout Padding="20, 0, 20, 0" IsVisible="{Binding IsUploadAvailable}">
+                        <Label x:Name="lblUpload"
+                         Text="{i18n:Translate Upload}"
+                         TextColor="Blue"
+                         Font="{x:Static common:FontResources.Standard}" >
+                          <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                              Command="{Binding TapUploadCommand}"
+                              CommandParameter="{Binding enroll.ID}"/>
+                          </Label.GestureRecognizers>
+                        </Label>
+                      </StackLayout>
+
+                      <StackLayout Padding="20, 0, 20, 0" IsVisible="{Binding IsUploadImageExist}">
+                        <Label x:Name="lblUpdate"
+                         Text="{i18n:Translate Update}"
+                         TextColor="Blue"
+                         Font="{x:Static common:FontResources.Standard}" >
+                          <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                              Command="{Binding TapUpdateCommand}"
+                              CommandParameter="{Binding enroll.ID}"/>
+                          </Label.GestureRecognizers>
+                        </Label>
+                      </StackLayout>
+
+                      <StackLayout Padding="20, 0, 20, 0" IsVisible="{Binding IsUploadImageExist}">
+                        <Label x:Name="lblDelete"
+                          Text="{i18n:Translate Delete}"
+                          TextColor="Blue"
+                          Font="{x:Static common:FontResources.Standard}" >
+                          <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                              Command="{Binding TapDeleteCommand}"
+                              CommandParameter="{Binding enroll.ID}"/>
+                          </Label.GestureRecognizers>
+                        </Label>
+                      </StackLayout>
+                    </StackLayout>
+                    
+                    <Label x:Name="lblCreated_at"
+                        Text="{Binding enroll.Created_at}"
+                        TextColor="{x:Static common:ColorResources.Gold}"
+                        Font="{x:Static common:FontResources.Small}"
+                        HorizontalTextAlignment="End"/>
+              
+                  </StackLayout>
+                </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+
+      <usercontrols:Pagination
+        TotalPage="{Binding TotalPage}"
+        CurrentPage="{Binding CurrentPage}"
+        Target="Enroll"/>
+    </StackLayout>
+</ContentPage>

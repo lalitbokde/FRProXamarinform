@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="FR.MyFriends"
+            xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+            xmlns:controls="clr-namespace:FR.Controls;assembly=FR"
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:common="clr-namespace:FR.Common;assembly=FR"
+            xmlns:i18n="clr-namespace:FR;assembly=FR"
+            BackgroundColor="#ffffff" >
+  
+  <StackLayout>
+    <StackLayout x:Name="slSearchUser" Padding="10, 10, 10, 10"  BackgroundColor="#eaeaea">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+      
+        <!--<Entry x:Name="etySearchKeyword" 
+          Text="user" 
+          FontSize="20"
+          Grid.Row="0" 
+          Grid.Column="0"
+          BackgroundColor="#ffffff"
+          Placeholder="Search"/>-->
+        <controls:EntryEx x:Name="etySearchKeyword" 
+          Text="" 
+          FontSize="20"
+          TextColor = "#eaeaea"
+          Grid.Row="0" 
+          Grid.Column="0"
+          BackgroundColor="#ffffff"
+          Placeholder="{i18n:Translate Search}"
+          BorderWidth ="2"
+          BorderRadius = "5"
+          BorderColor = "#eaeaea"/>
+
+        <Image Source="search.png"
+            x:Name="imgSearch"
+            Grid.Row="0"
+            Grid.Column="1"
+            WidthRequest="30"
+            HeightRequest="30">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                Tapped="OnTapGestureRecognizerTapped"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+      </Grid>
+    </StackLayout>
+    
+    <StackLayout x:Name="slNewFriendRequest" >
+      <StackLayout.GestureRecognizers>
+        <TapGestureRecognizer
+                Tapped="OnTappedNewFriendRequest"
+                NumberOfTapsRequired="1" />
+      </StackLayout.GestureRecognizers>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="70" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Source="new_friend_request.png" 
+              HeightRequest="50"
+              WidthRequest="50"
+              HorizontalOptions="Center"
+              Grid.Row="0"
+              Grid.Column="0"/>
+            
+        <StackLayout Padding="10,25,10,10"  Grid.Row="0" Grid.Column="1">
+          <Label x:Name="lbllvFriendTitle"
+                Text="{i18n:Translate NewFriendRequestList}" 
+                Font="{x:Static common:FontResources.StandardBold}"
+                TextColor="#000000"/>
+        </StackLayout>
+      </Grid>
+    </StackLayout>
+
+    <StackLayout Padding="5" BackgroundColor="#eaeaea">
+      
+    </StackLayout>
+    
+    <StackLayout x:Name="slFriend" BackgroundColor="{x:Static common:ColorResources.ListBGColor}">
+      <ListView x:Name="lvFriends" 
+                HasUnevenRows="true" 
+                ItemsSource="{Binding MyFriends}"
+                SelectedItem="{Binding SelectedItem }">
+        <ListView.Header>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="70" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="50" />
+                  <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Padding="0,10,0,0" Grid.Column="0" >
+                  <ffimageloading:CachedImage
+                    Source="{Binding friend.Avatar}"
+                    x:Name="imgFriendAvatar"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="50"
+                    HeightRequest="50">
+                  </ffimageloading:CachedImage>
+                </StackLayout>
+
+                <StackLayout Padding="10,25,10,10" Grid.Column="1">
+                  <Label x:Name="lblFriendName" 
+                      Text="{Binding friend.FriendName}" 
+                      TextColor="Black"
+                      Font="{x:Static common:FontResources.Standard}"/>
+                </StackLayout>
+
+                <StackLayout Padding="0,15,0,0" Grid.Column="2">
+                  <ffimageloading:CachedImage
+                    x:Name="btnSendPrivateMessage"
+                    Source="send.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    IsVisible="{Binding IsSelected}">
+                    <ffimageloading:CachedImage.GestureRecognizers>
+                      <TapGestureRecognizer
+                        Command="{Binding TapSendPrivateMessageCommand}"
+                        CommandParameter="{Binding friend}"/>
+                    </ffimageloading:CachedImage.GestureRecognizers>
+                  </ffimageloading:CachedImage>
+                </StackLayout>
+
+                <StackLayout Padding="0,15,0,0" Grid.Column="3">
+                  <ffimageloading:CachedImage
+                    x:Name="btnBlockFriend"
+                    Source="cancel.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    IsVisible="{Binding IsSelected}">
+                    <ffimageloading:CachedImage.GestureRecognizers>
+                      <TapGestureRecognizer
+                        Command="{Binding TapCommand}"
+                        CommandParameter="{Binding friend}"/>
+                    </ffimageloading:CachedImage.GestureRecognizers>
+                  </ffimageloading:CachedImage>
+                </StackLayout>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+    
+    <usercontrols:BottomMenu x:Name="bottomMenu" />
+  </StackLayout>
+</ContentPage>

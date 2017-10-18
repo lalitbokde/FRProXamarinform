@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+            xmlns:i18n="clr-namespace:FR;assembly=FR"
+            x:Class="FR.ChatRoomItemPage"
+            BackgroundColor="#ffffff"  >
+  <StackLayout>
+		
+    <!--<controls:PullToRefreshLayout
+          IsPullToRefreshEnabled="True"
+          RefreshCommand="{Binding RefreshCommand}"
+          IsRefreshing="{Binding IsBusy}"
+          RefreshColor="Blue">-->
+		
+      <ListView x:Name="lvChatMessages"
+                HasUnevenRows="true"
+                ItemsSource="{Binding Items}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="80" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+
+                <usercontrols:Avatar
+                  Grid.Column="0"
+                  x:Name="avatarLeft"
+                  Text="{Binding Sender_Username}"
+                  ImageSource= "{Binding Avatar}"
+                  SenderUserID="{Binding Sender_User_ID}"/>
+
+                <usercontrols:ChatMessageContent
+                  Grid.Column="1"
+                  Text="{Binding Message }"
+                  MediaFileName = "{Binding File }"
+                  SenderUserID="{Binding Sender_User_ID}"
+                  MessageID="{Binding ID}"/>
+
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>    
+<!--    </controls:PullToRefreshLayout>-->
+    
+    <Grid Padding="10, 10, 10, 10" RowSpacing="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="60" />
+        <ColumnDefinition Width="60" />
+        <ColumnDefinition Width="60" />
+        <ColumnDefinition Width="60" />
+      </Grid.ColumnDefinitions>
+
+      <Entry x:Name="etyMessage"
+        Text="{Binding }"
+        FontSize="15"
+        TextColor="Black"
+        Placeholder="{i18n:Translate WriteAMessage}"
+        Grid.Row="0"
+        Grid.Column="0"
+        Grid.ColumnSpan="4"/>
+
+      <Image
+        x:Name="imgSend"
+        Grid.Row="0"
+        Grid.Column="4"
+        WidthRequest="25"
+        HeightRequest="25">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+            Tapped="OnTappedImgSend"
+            NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+
+      <Image
+        x:Name="imgCamera"
+        Grid.Row="2"
+        Grid.Column="1"
+        WidthRequest="25"
+        HeightRequest="25">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+            Tapped="OnTappedImgCamera"
+            NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+
+      <Image
+        x:Name="imgPicture"
+        Grid.Row="2"
+        Grid.Column="2"
+        WidthRequest="25"
+        HeightRequest="25">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+            Tapped="OnTappedImgPicture"
+            NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+
+      <Image
+        x:Name="imgVoice"
+        Grid.Row="2"
+        Grid.Column="3"
+        WidthRequest="25"
+        HeightRequest="25">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+            Tapped="OnTappedImgVoice"
+            NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+
+      <Image
+      x:Name="imgFav"
+      Grid.Row="2"
+      Grid.Column="4"
+      WidthRequest="30"
+      HeightRequest="30">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+            Tapped="OnTappedImgFav"
+            NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+    </Grid>
+
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+            xmlns:i18n="clr-namespace:FR;assembly=FR"
+            x:Class="FR.FavouriteListPage"
+            xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+            BackgroundColor="#ffffff"  >
+  <StackLayout>
+    <ListView x:Name="lvFav" HasUnevenRows="true">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+               
+                 <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="20" />
+              </Grid.ColumnDefinitions>
+             
+              <mr:Label x:Name="lblFav"
+                  Grid.Column="1"
+                  FontSize="24"
+                  Tapping="OnTappedlblFav"
+                  Text="{Binding Message}" />
+             
+                     <Image 
+                  x:Name="imgDel"
+                  Grid.Row="0"
+                  Grid.Column="3"
+                  WidthRequest="15" 
+                  HeightRequest="15"
+                  Source="cancel.png" >
+                   <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                      Tapped="OnTappedDel"
+                      NumberOfTapsRequired="1" CommandParameter = "{Binding ID}" />
+                  </Image.GestureRecognizers>
+                </Image>
+ 
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    
+  </StackLayout>
+</ContentPage>

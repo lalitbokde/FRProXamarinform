@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.Component.BottomMenu"
+             xmlns:i18n="clr-namespace:FR;assembly=FR">
+  <Grid RowSpacing="1"
+        ColumnSpacing="1"
+        BackgroundColor="#ffffff"
+        Padding="10,10,10,10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Image x:Name="imgChattingRoom"
+          Source="chat_room_unactive.png"
+          Grid.Row="0"
+          Grid.Column="0"
+          WidthRequest="30"
+          HeightRequest="30"
+          HorizontalOptions="Center">
+      <Image.GestureRecognizers>
+        <TapGestureRecognizer
+          Tapped="OnTappedImgChattingRoom"
+          NumberOfTapsRequired="1" />
+      </Image.GestureRecognizers>
+    </Image>
+
+    <Image x:Name="imgMyFriends"
+          Source="my_friends_unactive.png"
+          Grid.Row="0"
+          Grid.Column="1"
+          WidthRequest="30"
+          HeightRequest="30"
+          HorizontalOptions="Center">
+      <Image.GestureRecognizers>
+        <TapGestureRecognizer
+          Tapped="OnTappedImgMyFriends"
+          NumberOfTapsRequired="1" />
+      </Image.GestureRecognizers>
+    </Image>
+
+    <Image x:Name="imgMyProfile"
+          Source="my_profile_unactive.png"
+          Grid.Row="0"
+          Grid.Column="2"
+          WidthRequest="30"
+          HeightRequest="30"
+          HorizontalOptions="Center">
+      <Image.GestureRecognizers>
+        <TapGestureRecognizer
+          Tapped="OnTappedImgMyProfile"
+          NumberOfTapsRequired="1" />
+      </Image.GestureRecognizers>
+    </Image>
+    
+    <Label x:Name="lblChattingRoom" 
+           Text="{i18n:Translate ChattingRoomUC}" 
+           Grid.Row="1" 
+           Grid.Column="0" 
+           TextColor="#c7cfda" 
+           HorizontalOptions="Center"
+           FontSize="10"/>
+    
+    <Label x:Name="lblMyFriends" 
+           Text="{i18n:Translate MyFriendsUC}" 
+           Grid.Row="1" 
+           Grid.Column="1" 
+           TextColor="#c7cfda" 
+           HorizontalOptions="Center"
+           FontSize="10"/>
+    
+    <Label x:Name="lblMyProfile" 
+           Text="{i18n:Translate MyProfileUC}" 
+           Grid.Row="1" 
+           Grid.Column="2" 
+           TextColor="#c7cfda" 
+           HorizontalOptions="Center"
+           FontSize="10"/>
+  </Grid>
+</StackLayout>

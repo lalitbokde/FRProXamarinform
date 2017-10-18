@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.MyProfilePage"
+             xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+             xmlns:i18n="clr-namespace:FR;assembly=FR"
+             BackgroundColor="#eaeaea">
+  <ContentPage.Content>
+    <StackLayout>
+      <StackLayout Padding="0,20,0,20">
+        <usercontrols:UserInfo x:Name="userInfo" />
+      </StackLayout>
+      <usercontrols:BankInfo x:Name="bankInfo" />
+      <StackLayout Padding="10,10,10,10">
+        <Button x:Name="btnChangeProfileImage" 
+          Text="{i18n:Translate ChangeProfileImage}" 
+          BackgroundColor="#629df7"/>
+      </StackLayout>
+      <usercontrols:BottomMenu x:Name="bottomMenu" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

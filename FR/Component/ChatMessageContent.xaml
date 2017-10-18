@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.Component.ChatMessageContent"
+             xmlns:local="clr-namespace:FR;assembly=FR"
+             xmlns:f9p="clr-namespace:Forms9Patch;assembly=Forms9Patch"
+             xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+
+  <StackLayout Padding="2, 2">
+    <f9p:ContentView Padding="20,20,20,20">
+      <f9p:ContentView.BackgroundImage>
+        <f9p:Image x:Name="imgBubbleMessage"/>
+      </f9p:ContentView.BackgroundImage>
+      <StackLayout>
+
+        <mr:Label x:Name="lblMessage"
+                  FontSize="14"
+                  IsVisible="false"
+                  LongPressing="LongPressing"
+                  Tapping="TappedLabel"/>
+
+        <ffimageloading:CachedImage
+           x:Name="imgUploadPicture"
+           DownsampleToViewSize="true"
+           HeightRequest="100"
+           WidthRequest="200"
+           RetryCount="0"
+           RetryDelay="250"
+           IsVisible="false">
+          <ffimageloading:CachedImage.GestureRecognizers>
+            <TapGestureRecognizer
+              x:Name="tgrImgUploadPicture"
+              Tapped="OnTappedImgUploadPicture"
+              NumberOfTapsRequired="1" />
+          </ffimageloading:CachedImage.GestureRecognizers>
+        </ffimageloading:CachedImage>
+
+        <ffimageloading:CachedImage
+          x:Name="imgPlay"
+          DownsampleToViewSize="true"
+          HeightRequest="40"
+          WidthRequest="40"
+          IsVisible="false">
+          <ffimageloading:CachedImage.GestureRecognizers>
+            <TapGestureRecognizer
+              x:Name="tgImgPlay"
+              Tapped="OnTappedImgPlay"
+              NumberOfTapsRequired="1" />
+          </ffimageloading:CachedImage.GestureRecognizers>
+        </ffimageloading:CachedImage>
+      </StackLayout>
+    </f9p:ContentView>
+  </StackLayout>
+
+</StackLayout>

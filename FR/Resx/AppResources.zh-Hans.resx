@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddButton" xml:space="preserve">
+    <value>添加新项目</value>
+    <comment>this string appears on a button to add a new item to the list</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>取消</value>
+    <comment>button on alert popup to close it</comment>
+  </data>
+  <data name="NotesLabel" xml:space="preserve">
+    <value>备注︰</value>
+    <comment>label for input field</comment>
+  </data>
+  <data name="NotesPlaceholder" xml:space="preserve">
+    <value>如。买牛奶</value>
+    <comment>example input for notes field</comment>
+  </data>
+  <data name="PickerName" xml:space="preserve">
+    <value>选择一个数字</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>和</value>
+  </data>
+  <data name="BySignUpAndYouAgree" xml:space="preserve">
+    <value>通过注册，您同意</value>
+  </data>
+  <data name="DontHaveAccount" xml:space="preserve">
+    <value>没有帐户？</value>
+  </data>
+  <data name="ForgetPassword" xml:space="preserve">
+    <value>忘记了密码？</value>
+  </data>
+  <data name="PrivatePolicy" xml:space="preserve">
+    <value>私人政策</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>登记</value>
+  </data>
+  <data name="TermOfService" xml:space="preserve">
+    <value>服务条款</value>
+  </data>
+  <data name="IncorrectCredential" xml:space="preserve">
+    <value>用户名或密码不正确</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="PleaseCheckInternatConnection" xml:space="preserve">
+    <value>请检查网络连接</value>
+  </data>
+  <data name="UsernameAndPasswordRequired" xml:space="preserve">
+    <value>需要用户名和密码</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="GetBackPasswordInfo" xml:space="preserve">
+    <value>若要找回您的密码，请联系我们的客户服务。</value>
+  </data>
+  <data name="ChattingRoomUC" xml:space="preserve">
+    <value>聊天室</value>
+  </data>
+  <data name="MyFriendsUC" xml:space="preserve">
+    <value>我的朋友</value>
+  </data>
+  <data name="MyProfileUC" xml:space="preserve">
+    <value>我的资料</value>
+  </data>
+  <data name="MyFriends" xml:space="preserve">
+    <value>我的朋友</value>
+  </data>
+  <data name="NewFriendRequestList" xml:space="preserve">
+    <value>新朋友请求列表</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="ChattingRoom" xml:space="preserve">
+    <value>聊天室</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>我的资料</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+  <data name="SendFriendRequest" xml:space="preserve">
+    <value>发送好友请求</value>
+  </data>
+  <data name="ChangeProfileImage" xml:space="preserve">
+    <value>更改个人图像</value>
+  </data>
+  <data name="PermissionNotGrantedToPhotos" xml:space="preserve">
+    <value>照片不授予的权限。</value>
+  </data>
+  <data name="PhotosNotSupported" xml:space="preserve">
+    <value>不支持照片</value>
+  </data>
+  <data name="NoCamera" xml:space="preserve">
+    <value>没有摄像机</value>
+  </data>
+  <data name="NoCameraAvailable" xml:space="preserve">
+    <value>没有可用的摄像头。</value>
+  </data>
+  <data name="WriteAMessage" xml:space="preserve">
+    <value>写一条消息...</value>
+  </data>
+  <data name="SearchUser" xml:space="preserve">
+    <value>搜索用户</value>
+  </data>
+  <data name="BankCardNumber" xml:space="preserve">
+    <value>银行卡号</value>
+  </data>
+  <data name="BankInfo" xml:space="preserve">
+    <value>银行信息</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>银行名称</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="MessageAlreadyCopy" xml:space="preserve">
+    <value>您的消息已经复制到剪贴板</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PasswordIncorrect" xml:space="preserve">
+    <value>您的密码不正确</value>
+  </data>
+  <data name="SendPMTo" xml:space="preserve">
+    <value>发送私人讯息至</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="Favourite" xml:space="preserve">
+    <value>添加到收藏夹</value>
+  </data>
+  <data name="MessageFavAdded" xml:space="preserve">
+    <value>添加到收藏夹</value>
+  </data>
+  <data name="Enroll" xml:space="preserve">
+    <value>预售计划</value>
+  </data>
+  <data name="AddEnroll" xml:space="preserve">
+    <value>添加预售计划</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="NoTelephoneNumber" xml:space="preserve">
+    <value>请输入电话号码</value>
+  </data>
+  <data name="NoUserName" xml:space="preserve">
+    <value>请输入用户的名字</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="MenuFavourite" xml:space="preserve">
+    <value>收藏</value>
+  </data>
+  <data name="MessageFavDeleted" xml:space="preserve">
+    <value>收藏已成功删除</value>
+  </data>
+  <data name="FavDeleteConfirmation" xml:space="preserve">
+    <value>您要删除</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>问题?</value>
+  </data>
+  <data name="PreSaleGroup" xml:space="preserve">
+    <value>预售群</value>
+  </data>
+  <data name="PreSaleGroupDescription" xml:space="preserve">
+    <value>预售计划、先入为主！</value>
+  </data>
+  <data name="EnrollRule1" xml:space="preserve">
+    <value>1.根据自身需求慎重填写。</value>
+  </data>
+  <data name="EnrollRule2" xml:space="preserve">
+    <value>2.当预售金额达45万时，启动第一次拆分30万的发售。</value>
+  </data>
+  <data name="EnrollRule3" xml:space="preserve">
+    <value>3.根据排队认购顺序进行缴款交易、摆位。</value>
+  </data>
+  <data name="EnrollRule4" xml:space="preserve">
+    <value>4.未及时缴款交易的位置自然滑落。</value>
+  </data>
+  <data name="EnrollRule5" xml:space="preserve">
+    <value>5.预购者在接到缴款通知的有效期内，未缴款交易的，经双方确认，视为弃权。</value>
+  </data>
+  <data name="EnrollRule6" xml:space="preserve">
+    <value>6.多账户者，请上传附图说明如何摆位。留下名字 / 电话号码 / 用户名 / 位置高低，先来者高。</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上载</value>
+  </data>
+  <data name="ClickAndEnter" xml:space="preserve">
+    <value>点击进入</value>
+  </data>
+  <data name="FRChat" xml:space="preserve">
+    <value>FR会员区</value>
+  </data>
+  <data name="EnrollRule7" xml:space="preserve">
+    <value>7.说明 ：预售计划享受优惠待遇（1张身份证，只可投资3单），2017年元月31日止。只开通1星一四星，奖金待遇1星享受3星，2星享受4星，3星享受5星，4星享受6星，为期1个月。</value>
+  </data>
+  <data name="FRChatDescription" xml:space="preserve">
+    <value>有关FR成员的信息</value>
+  </data>
+  <data name="ChattingRoomDescription" xml:space="preserve">
+    <value>所有用户共同聊天室</value>
+  </data>
+</root>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="25" key="view" image="login_background.jpg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <variation key="heightClass=regular-widthClass=compact" image="login_background.jpg"/>
+                    </imageView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audio_play_1.png" width="95" height="98"/>
+        <image name="audio_play_2.png" width="95" height="98"/>
+        <image name="bak_camera.png" width="128" height="128"/>
+        <image name="bak_hamburger.png" width="14" height="15"/>
+        <image name="bak_landscape.png" width="128" height="128"/>
+        <image name="bak_send.png" width="128" height="128"/>
+        <image name="bak_sound.png" width="128" height="128"/>
+        <image name="bank.png" width="69" height="81"/>
+        <image name="bottom_line.png" width="888" height="3"/>
+        <image name="camera.png" width="77" height="68"/>
+        <image name="cancel.png" width="110" height="110"/>
+        <image name="chat_room.png" width="256" height="256"/>
+        <image name="chat_room_active.png" width="73" height="59"/>
+        <image name="chat_room_unactive.png" width="66" height="59"/>
+        <image name="fav.png" width="512" height="512"/>
+        <image name="fr2.png" width="1024" height="1024"/>
+        <image name="fr_chat.png" width="512" height="512"/>
+        <image name="fr_logo.png" width="288" height="240"/>
+        <image name="friends.png" width="512" height="512"/>
+        <image name="icon.png" width="512" height="512"/>
+        <image name="image.png" width="87" height="70"/>
+        <image name="logout.png" width="256" height="256"/>
+        <image name="mute.png" width="128" height="128"/>
+        <image name="my_friends_active.png" width="66" height="59"/>
+        <image name="my_friends_unactive.png" width="61" height="67"/>
+        <image name="my_profile_active.png" width="65" height="69"/>
+        <image name="my_profile_unactive.png" width="60" height="59"/>
+        <image name="new_friend_request.png" width="125" height="128"/>
+        <image name="ok.png" width="110" height="110"/>
+        <image name="password.png" width="31" height="41"/>
+        <image name="search.png" width="128" height="128"/>
+        <image name="send.png" width="69" height="65"/>
+        <image name="sound.png" width="75" height="63"/>
+        <image name="todo.png" width="128" height="128"/>
+        <image name="username.png" width="41" height="41"/>
+        <image name="login_company_logo.png" width="638" height="311"/>
+        <image name="login_background.jpg" width="2592" height="4752"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

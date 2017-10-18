@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.Component.BankInfo"
+             xmlns:i18n="clr-namespace:FR;assembly=FR">
+  <Grid RowSpacing="1" 
+        ColumnSpacing="1" 
+        Padding="20, 10, 20, 10" 
+        BackgroundColor="#629df7">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="30" />
+      <RowDefinition Height="30" />
+      <RowDefinition Height="30" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Grid Grid.Row="0" Grid.Column="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="30" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="30" />
+        <ColumnDefinition Width="70" />
+      </Grid.ColumnDefinitions>
+      <Image x:Name="imgBank"
+             Source="bank.png"
+             HeightRequest="30"
+             WidthRequest="30"
+             Grid.Row="0" 
+             Grid.Column="0"
+             />
+
+      <StackLayout Padding="0, 5, 0, 0" Grid.Row="0" Grid.Column="1" >
+        <Label Text="{i18n:Translate BankInfo}"  TextColor="#ffffff"/>
+      </StackLayout>
+    </Grid>
+    
+    <Label x:Name="lblBankNameLabel" Grid.Row="1" Grid.Column="0" TextColor="#ffffff"/>
+    <Label x:Name="lblBankName" Text="" Grid.Row="1" Grid.Column="1" TextColor="#ffffff"/>
+    
+    <Label x:Name="lblBankCardNumberLabel" Grid.Row="2" Grid.Column="0" TextColor="#ffffff"/>
+    <Label x:Name="lblBankCardNumber" Text="" Grid.Row="2" Grid.Column="1" TextColor="#ffffff"/>
+  </Grid>
+</StackLayout>

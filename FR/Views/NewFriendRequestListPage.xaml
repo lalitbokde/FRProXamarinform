@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.NewFriendRequestListPage"
+             xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+  <StackLayout BackgroundColor="#ffffff">
+    <ListView x:Name="lvNewFriendsRequest" 
+              ItemSelected="OnItemSelected" 
+              HasUnevenRows="true"
+              ItemsSource="{Binding MyNewFriendRequests}">
+      <ListView.Header>
+      </ListView.Header>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+              </Grid.ColumnDefinitions>
+
+              <StackLayout Padding="10, 8, 10, 10" Grid.Column="0">
+                <ffimageloading:CachedImage
+                   Source="{Binding friend.Avatar}"
+                   x:Name="imgFriendAvatar"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   WidthRequest="50"
+                   HeightRequest="50">
+                </ffimageloading:CachedImage>
+              </StackLayout>
+              
+              <StackLayout Padding="10,25,10,10" Grid.Column="1">
+                <Label x:Name="lblFriendName" Text="{Binding friend.FriendName}" TextColor="Black"/>
+              </StackLayout>
+              
+              <StackLayout Padding="0,15,0,0" Grid.Column="2">
+                <ffimageloading:CachedImage
+                  x:Name="btnApprove"
+                  Source="ok.png"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  WidthRequest="40"
+                  HeightRequest="40"
+                  IsVisible="{Binding IsSelected}">
+                  <ffimageloading:CachedImage.GestureRecognizers>
+                    <TapGestureRecognizer
+                      Command="{Binding ApproveFriendTapCommand}"
+                      CommandParameter="{Binding friend}"/>
+                  </ffimageloading:CachedImage.GestureRecognizers>
+                </ffimageloading:CachedImage>
+              </StackLayout>
+
+              <StackLayout Padding="0,15,0,0" Grid.Column="3">
+                <ffimageloading:CachedImage
+                  x:Name="btnReject"
+                  Source="cancel.png"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  WidthRequest="40"
+                  HeightRequest="40"
+                  IsVisible="{Binding IsSelected}">
+                  <ffimageloading:CachedImage.GestureRecognizers>
+                    <TapGestureRecognizer
+                      Command="{Binding RejectFriendTapCommand}"
+                      CommandParameter="{Binding friend}"/>
+                  </ffimageloading:CachedImage.GestureRecognizers>
+                </ffimageloading:CachedImage>
+              </StackLayout>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <usercontrols:BottomMenu x:Name="bottomMenu" />
+  </StackLayout>
+</ContentPage>

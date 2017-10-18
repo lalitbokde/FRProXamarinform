@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="zh-Hans" original="FR/RESX/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1795.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="FR/RESX/APPRESOURCES.RESX" datatype="resx">
+        <trans-unit id="AddButton" translate="yes" xml:space="preserve">
+          <source>Add new item</source>
+          <target state="final" state-qualifier="mt-suggestion">添加新项目</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">this string appears on a button to add a new item to the list</note>
+        </trans-unit>
+        <trans-unit id="CancelButton" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="final" state-qualifier="mt-suggestion">取消</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">button on alert popup to close it</note>
+        </trans-unit>
+        <trans-unit id="NotesLabel" translate="yes" xml:space="preserve">
+          <source>Notes:</source>
+          <target state="final" state-qualifier="mt-suggestion">备注︰</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">label for input field</note>
+        </trans-unit>
+        <trans-unit id="NotesPlaceholder" translate="yes" xml:space="preserve">
+          <source>eg. buy milk</source>
+          <target state="final" state-qualifier="mt-suggestion">如。买牛奶</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">example input for notes field</note>
+        </trans-unit>
+        <trans-unit id="PickerName" translate="yes" xml:space="preserve">
+          <source>Choose a number</source>
+          <target state="final" state-qualifier="mt-suggestion">选择一个数字</target>
+        </trans-unit>
+        <trans-unit id="SignIn" translate="yes" xml:space="preserve">
+          <source>SIGN IN</source>
+          <target state="final" state-qualifier="mt-suggestion">登录</target>
+        </trans-unit>
+        <trans-unit id="And" translate="yes" xml:space="preserve">
+          <source>and </source>
+          <target state="final" state-qualifier="mt-suggestion">和</target>
+        </trans-unit>
+        <trans-unit id="BySignUpAndYouAgree" translate="yes" xml:space="preserve">
+          <source>By signing up, you agree to the </source>
+          <target state="final" state-qualifier="mt-suggestion">通过注册，您同意</target>
+        </trans-unit>
+        <trans-unit id="DontHaveAccount" translate="yes" xml:space="preserve">
+          <source>Don't have an account? </source>
+          <target state="final" state-qualifier="mt-suggestion">没有帐户？</target>
+        </trans-unit>
+        <trans-unit id="ForgetPassword" translate="yes" xml:space="preserve">
+          <source>Forget Password?</source>
+          <target state="final" state-qualifier="mt-suggestion">忘记了密码？</target>
+        </trans-unit>
+        <trans-unit id="PrivatePolicy" translate="yes" xml:space="preserve">
+          <source>Private Policy</source>
+          <target state="final" state-qualifier="mt-suggestion">私人政策</target>
+        </trans-unit>
+        <trans-unit id="SignUp" translate="yes" xml:space="preserve">
+          <source>SIGN UP</source>
+          <target state="final" state-qualifier="mt-suggestion">登记</target>
+        </trans-unit>
+        <trans-unit id="TermOfService" translate="yes" xml:space="preserve">
+          <source>Term of Service</source>
+          <target state="final">服务条款</target>
+        </trans-unit>
+        <trans-unit id="IncorrectCredential" translate="yes" xml:space="preserve">
+          <source>Username or Password is incorrect</source>
+          <target state="final">用户名或密码不正确</target>
+        </trans-unit>
+        <trans-unit id="LoginFailed" translate="yes" xml:space="preserve">
+          <source>Login Failed</source>
+          <target state="final">登录失败</target>
+        </trans-unit>
+        <trans-unit id="OK" translate="yes" xml:space="preserve">
+          <source>OK</source>
+          <target state="final">确定</target>
+        </trans-unit>
+        <trans-unit id="PleaseCheckInternatConnection" translate="yes" xml:space="preserve">
+          <source>Please Check the internat connection</source>
+          <target state="final">请检查网络连接</target>
+        </trans-unit>
+        <trans-unit id="UsernameAndPasswordRequired" translate="yes" xml:space="preserve">
+          <source>Username And Password Required</source>
+          <target state="final">需要用户名和密码</target>
+        </trans-unit>
+        <trans-unit id="Confirm" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <target state="final">确认</target>
+        </trans-unit>
+        <trans-unit id="GetBackPasswordInfo" translate="yes" xml:space="preserve">
+          <source>To get back your password, please contact our customer service.</source>
+          <target state="final">若要找回您的密码，请联系我们的客户服务。</target>
+        </trans-unit>
+        <trans-unit id="ChattingRoomUC" translate="yes" xml:space="preserve">
+          <source>CHATTING ROOM</source>
+          <target state="final" state-qualifier="mt-suggestion">聊天室</target>
+        </trans-unit>
+        <trans-unit id="MyFriendsUC" translate="yes" xml:space="preserve">
+          <source>MY FRIENDS</source>
+          <target state="final" state-qualifier="mt-suggestion">我的朋友</target>
+        </trans-unit>
+        <trans-unit id="MyProfileUC" translate="yes" xml:space="preserve">
+          <source>MY PROFILE</source>
+          <target state="final">我的资料</target>
+        </trans-unit>
+        <trans-unit id="MyFriends" translate="yes" xml:space="preserve">
+          <source>My Friends</source>
+          <target state="final" state-qualifier="mt-suggestion">我的朋友</target>
+        </trans-unit>
+        <trans-unit id="NewFriendRequestList" translate="yes" xml:space="preserve">
+          <source>New Friend Request List</source>
+          <target state="final" state-qualifier="mt-suggestion">新朋友请求列表</target>
+        </trans-unit>
+        <trans-unit id="Search" translate="yes" xml:space="preserve">
+          <source>Search</source>
+          <target state="final" state-qualifier="mt-suggestion">搜索</target>
+        </trans-unit>
+        <trans-unit id="Approve" translate="yes" xml:space="preserve">
+          <source>Approve</source>
+          <target state="final">批准</target>
+        </trans-unit>
+        <trans-unit id="ChattingRoom" translate="yes" xml:space="preserve">
+          <source>Chatting Room</source>
+          <target state="final">聊天室</target>
+        </trans-unit>
+        <trans-unit id="Logout" translate="yes" xml:space="preserve">
+          <source>Logout</source>
+          <target state="final">退出</target>
+        </trans-unit>
+        <trans-unit id="MyProfile" translate="yes" xml:space="preserve">
+          <source>My Profile</source>
+          <target state="final">我的资料</target>
+        </trans-unit>
+        <trans-unit id="Reject" translate="yes" xml:space="preserve">
+          <source>Reject</source>
+          <target state="final">拒绝</target>
+        </trans-unit>
+        <trans-unit id="Welcome" translate="yes" xml:space="preserve">
+          <source>Welcome </source>
+          <target state="final">欢迎</target>
+        </trans-unit>
+        <trans-unit id="SendFriendRequest" translate="yes" xml:space="preserve">
+          <source>Send Friend Request</source>
+          <target state="final">发送好友请求</target>
+        </trans-unit>
+        <trans-unit id="ChangeProfileImage" translate="yes" xml:space="preserve">
+          <source>Change Profile Image</source>
+          <target state="final">更改个人图像</target>
+        </trans-unit>
+        <trans-unit id="PermissionNotGrantedToPhotos" translate="yes" xml:space="preserve">
+          <source>Permission not granted to photos.</source>
+          <target state="final">照片不授予的权限。</target>
+        </trans-unit>
+        <trans-unit id="PhotosNotSupported" translate="yes" xml:space="preserve">
+          <source>Photos Not Supported</source>
+          <target state="final">不支持照片</target>
+        </trans-unit>
+        <trans-unit id="NoCamera" translate="yes" xml:space="preserve">
+          <source>No Camera</source>
+          <target state="final">没有摄像机</target>
+        </trans-unit>
+        <trans-unit id="NoCameraAvailable" translate="yes" xml:space="preserve">
+          <source>No camera available.</source>
+          <target state="final">没有可用的摄像头。</target>
+        </trans-unit>
+        <trans-unit id="WriteAMessage" translate="yes" xml:space="preserve">
+          <source>Write a message...</source>
+          <target state="final">写一条消息...</target>
+        </trans-unit>
+        <trans-unit id="SearchUser" translate="yes" xml:space="preserve">
+          <source>Search User</source>
+          <target state="final">搜索用户</target>
+        </trans-unit>
+        <trans-unit id="BankCardNumber" translate="yes" xml:space="preserve">
+          <source>Bank Card Number</source>
+          <target state="final">银行卡号</target>
+        </trans-unit>
+        <trans-unit id="BankInfo" translate="yes" xml:space="preserve">
+          <source>Bank Info</source>
+          <target state="final">银行信息</target>
+        </trans-unit>
+        <trans-unit id="BankName" translate="yes" xml:space="preserve">
+          <source>Bank Name</source>
+          <target state="final">银行名称</target>
+        </trans-unit>
+        <trans-unit id="Copy" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <target state="final">复制</target>
+        </trans-unit>
+        <trans-unit id="MessageAlreadyCopy" translate="yes" xml:space="preserve">
+          <source>Your message already copy to clipboard</source>
+          <target state="final">您的消息已经复制到剪贴板</target>
+        </trans-unit>
+        <trans-unit id="Password" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="final">密码</target>
+        </trans-unit>
+        <trans-unit id="PasswordIncorrect" translate="yes" xml:space="preserve">
+          <source>Your password incorrect</source>
+          <target state="final">您的密码不正确</target>
+        </trans-unit>
+        <trans-unit id="SendPMTo" translate="yes" xml:space="preserve">
+          <source>Send PM To</source>
+          <target state="final">发送私人讯息至</target>
+        </trans-unit>
+        <trans-unit id="Share" translate="yes" xml:space="preserve">
+          <source>Share</source>
+          <target state="final">共享</target>
+        </trans-unit>
+        <trans-unit id="Username" translate="yes" xml:space="preserve">
+          <source>Username</source>
+          <target state="final">用户名</target>
+        </trans-unit>
+        <trans-unit id="Favourite" translate="yes" xml:space="preserve">
+          <source>Add to Favourite</source>
+          <target state="final">添加到收藏夹</target>
+        </trans-unit>
+        <trans-unit id="MessageFavAdded" translate="yes" xml:space="preserve">
+          <source>Added To Favourite</source>
+          <target state="final">添加到收藏夹</target>
+        </trans-unit>
+        <trans-unit id="Enroll" translate="yes" xml:space="preserve">
+          <source>Enroll</source>
+          <target state="final">预售计划</target>
+        </trans-unit>
+        <trans-unit id="AddEnroll" translate="yes" xml:space="preserve">
+          <source>Add Enroll</source>
+          <target state="final">添加预售计划</target>
+        </trans-unit>
+        <trans-unit id="Error" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <target state="final">错误</target>
+        </trans-unit>
+        <trans-unit id="Name" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="final">姓名</target>
+        </trans-unit>
+        <trans-unit id="NoTelephoneNumber" translate="yes" xml:space="preserve">
+          <source>Please input telephone number</source>
+          <target state="final">请输入电话号码</target>
+        </trans-unit>
+        <trans-unit id="NoUserName" translate="yes" xml:space="preserve">
+          <source>Please input user name</source>
+          <target state="final">请输入用户的名字</target>
+        </trans-unit>
+        <trans-unit id="Remark" translate="yes" xml:space="preserve">
+          <source>Remark</source>
+          <target state="final">注释</target>
+        </trans-unit>
+        <trans-unit id="Submit" translate="yes" xml:space="preserve">
+          <source>Submit</source>
+          <target state="final">提交</target>
+        </trans-unit>
+        <trans-unit id="Telephone" translate="yes" xml:space="preserve">
+          <source>Telephone</source>
+          <target state="final">电话</target>
+        </trans-unit>
+        <trans-unit id="MenuFavourite" translate="yes" xml:space="preserve">
+          <source>Favourite</source>
+          <target state="final">收藏</target>
+        </trans-unit>
+        <trans-unit id="MessageFavDeleted" translate="yes" xml:space="preserve">
+          <source>Favourite Deleted Successfully</source>
+          <target state="final">收藏已成功删除</target>
+        </trans-unit>
+        <trans-unit id="FavDeleteConfirmation" translate="yes" xml:space="preserve">
+          <source>Would you like Delete</source>
+          <target state="final">您要删除</target>
+        </trans-unit>
+        <trans-unit id="Question" translate="yes" xml:space="preserve">
+          <source>Question?</source>
+          <target state="final">问题?</target>
+        </trans-unit>
+        <trans-unit id="PreSaleGroup" translate="yes" xml:space="preserve">
+          <source>Pre-Sale Group</source>
+          <target state="final">预售群</target>
+        </trans-unit>
+        <trans-unit id="PreSaleGroupDescription" translate="yes" xml:space="preserve">
+          <source>Pre-Sale Plan, Preconceptions!</source>
+          <target state="final">预售计划、先入为主！</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule1" translate="yes" xml:space="preserve">
+          <source>1. Please fill according to your personal requirement carefully</source>
+          <target state="final">1.根据自身需求慎重填写。</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule2" translate="yes" xml:space="preserve">
+          <source>2. When the pre-sale amount reach 450, 000, will activate the first split 300, 000 sale</source>
+          <target state="final">2.当预售金额达45万时，启动第一次拆分30万的发售。</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule3" translate="yes" xml:space="preserve">
+          <source>3. According to the subscription queue ordering execute payment transaction and position.</source>
+          <target state="final">3.根据排队认购顺序进行缴款交易、摆位。</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule4" translate="yes" xml:space="preserve">
+          <source>4. Unable to make the payment transaction, the position will auto fall.</source>
+          <target state="final">4.未及时缴款交易的位置自然滑落。</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule5" translate="yes" xml:space="preserve">
+          <source>5. During the valid period notice of payment, pre-order person unable to make the payment, and after confirm by both parties, he or she will forfeit.</source>
+          <target state="final">5.预购者在接到缴款通知的有效期内，未缴款交易的，经双方确认，视为弃权。</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule6" translate="yes" xml:space="preserve">
+          <source>6. For multiple accounts, please upload a diagram showing how to place. Leave your name / phone number / username / position. First comer will location in higher position</source>
+          <target state="final">6.多账户者，请上传附图说明如何摆位。留下名字 / 电话号码 / 用户名 / 位置高低，先来者高。</target>
+        </trans-unit>
+        <trans-unit id="Delete" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="final">删除</target>
+        </trans-unit>
+        <trans-unit id="Update" translate="yes" xml:space="preserve">
+          <source>Update</source>
+          <target state="final">更新</target>
+        </trans-unit>
+        <trans-unit id="Upload" translate="yes" xml:space="preserve">
+          <source>Upload</source>
+          <target state="final">上载</target>
+        </trans-unit>
+        <trans-unit id="ClickAndEnter" translate="yes" xml:space="preserve">
+          <source>Click And Enter</source>
+          <target state="final">点击进入</target>
+        </trans-unit>
+        <trans-unit id="FRChat" translate="yes" xml:space="preserve">
+          <source>FR Chat</source>
+          <target state="final">FR会员区</target>
+        </trans-unit>
+        <trans-unit id="EnrollRule7" translate="yes" xml:space="preserve">
+          <source>Description: Pre-sale plan can enjoy preferential treatment (one ID card, can only invest 3 package), Due date is January 31, 2017. Only open from one star to four star package, bonus treatment is 1 star to enjoy 3 stars, 2 stars to enjoy 4 stars, 3 stars to enjoy 5 stars, 4 stars to enjoy 6 stars for 1 month</source>
+          <target state="final">7.说明 ：预售计划享受优惠待遇（1张身份证，只可投资3单），2017年元月31日止。只开通1星一四星，奖金待遇1星享受3星，2星享受4星，3星享受5星，4星享受6星，为期1个月。</target>
+        </trans-unit>
+        <trans-unit id="FRChatDescription" translate="yes" xml:space="preserve">
+          <source>All info about FR member</source>
+          <target state="final">有关FR成员的信息</target>
+        </trans-unit>
+        <trans-unit id="ChattingRoomDescription" translate="yes" xml:space="preserve">
+          <source>Common chat room for all users</source>
+          <target state="final">所有用户共同聊天室</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

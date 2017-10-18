@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.FriendAcceptOrRejectPage"
+             xmlns:usercontrols="clr-namespace:FR.Component;assembly=FR"
+             xmlns:i18n="clr-namespace:FR;assembly=FR">
+  <StackLayout BackgroundColor="#eaeaea">
+    <Grid HorizontalOptions="StartAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="300" />
+        <RowDefinition Height="50" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+
+      <StackLayout Padding="0,20,0,20" Grid.Row="0"  Grid.ColumnSpan="2">
+        <usercontrols:UserInfo x:Name="userInfo"  />
+      </StackLayout>
+
+      <StackLayout Padding="10,0,10,0" Grid.Row="1" Grid.ColumnSpan="2">
+        <Grid HorizontalOptions="StartAndExpand">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Button x:Name="btnRejectRequest"
+            TextColor="White"
+            BackgroundColor="#D91E18"
+            Text="{i18n:Translate Reject}"
+            Grid.Column="0"
+            FontSize="20"
+            BorderWidth="2"
+            BorderRadius="5"
+            BorderColor="#D91E18"
+            HorizontalOptions="FillAndExpand"/>
+
+          <Button x:Name="btnAcceptRequest"
+            TextColor="White"
+            BackgroundColor="#03A9F4"
+            Text="{i18n:Translate Approve}"
+            Grid.Column="1"
+            FontSize="20"
+            BorderWidth="2"
+            BorderRadius="5"
+            BorderColor="#03A9F4"
+            HorizontalOptions="FillAndExpand"/>
+        </Grid>
+      </StackLayout>
+    </Grid>
+  </StackLayout>
+</ContentPage>

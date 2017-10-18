@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="FR.Component.Avatar"
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+            WidthRequest="50"
+             Padding="0, 10, 0 ,10">
+  <ffimageloading:CachedImage
+    x:Name="imgAvatar"
+    DownsampleToViewSize="true"
+    Source = "OriginalImage.JPG"
+    HeightRequest="50"
+    WidthRequest="50"
+    Grid.Column="0">
+    <!--<ffimageloading:CachedImage.Transformations>
+      <fftransformations:CircleTransformation />
+    </ffimageloading:CachedImage.Transformations>-->
+  </ffimageloading:CachedImage>
+  
+  <Label x:Name="lblName" 
+         VerticalOptions="Center" HorizontalOptions="Center" 
+         FontSize="8" TextColor="#000000" FontAttributes="Bold"/>
+</StackLayout>

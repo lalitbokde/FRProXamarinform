@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.MenuPage"
+             Padding="10,50,10,0"
+             Title="LoggedIn">
+  <MasterDetailPage.Master>
+    <ContentPage Title="title"
+                 Padding="10,50,10,0">
+      <Label Text="Master"/>
+    </ContentPage>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <ContentPage Title="deyt"
+                 Padding="10,50,10,0">
+      <Label Text="Detail"/>
+    </ContentPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>

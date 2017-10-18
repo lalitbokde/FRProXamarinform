@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FR.RecordAudioPage">
+  <StackLayout>
+    <Label Text="Sound Recorder" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Button x:Name="btnStartRecording" Text="Start Recording" />
+    <Button x:Name="btnEndRecording" Text="End Recording" />
+    <Button x:Name="btnStartPlayback" Text="Start Playback" />
+    <Button x:Name="btnEndPlayback" Text="End Playback" />
+    <Label x:Name="lblVoiceUrl" Text="http://192.168.1.8/uploads/chat/voices/CggkbONqIWRl9PtZ6bLam09OwPIssZtY8MXX14On.mp3" />
+    <Button x:Name="btnStartPlaybackUrl" Text="Start Playback Url" />
+  </StackLayout>
+</ContentPage>
